@@ -1,0 +1,6 @@
+# files not to be committed in git
+
+reports/
+util/constant/keys.js
+node_modules
+.idea
