@@ -1,6 +1,7 @@
 # files not to be committed in git
 
-reports/
+reports/allure-reports/*
+reports/allure-results/*
 util/constant/keys.js
 node_modules
 .idea
