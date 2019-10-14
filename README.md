@@ -18,6 +18,11 @@ Getting Started
 Install the dependencies:
 
     npm install
+    Add file keys.js in ./util/constant with data of your private key and public key
+        module.exports = {
+            PRIVATE_KEY: 'paste your private key here',
+            PUBLIC_KEY: 'paste your public key here'
+        }
     
 To run 
 
