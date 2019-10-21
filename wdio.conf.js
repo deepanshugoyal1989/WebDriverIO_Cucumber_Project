@@ -6,6 +6,7 @@ exports.config = {
     //
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
     // on a remote machine).
+
     runner: 'local',
     //
     // ==================
@@ -17,12 +18,12 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './features/*.feature'
+        './features/marvelCharacters.feature'
     ],
     // Patterns to exclude.
-    exclude: [
-        // 'path/to/excluded/files'
-    ],
+    // exclude: [
+    //     // 'path/to/excluded/files'
+    // ],
     //
     // ============
     // Capabilities
@@ -203,10 +204,10 @@ exports.config = {
      * Runs after a Cucumber scenario
      */
     // afterScenario: function (uri, feature, scenario, result, sourceLocation){
+    //     // console.log('Is getting printed');
+    //     // console.log(scenario.getScenarioDescription());
     //
     // }
-
-    ,
     /**
      * Runs after a Cucumber feature
      */

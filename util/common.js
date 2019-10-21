@@ -29,12 +29,16 @@ module.exports = {
         return requestParameters.BASE_URL;
     },
 
-    getOffset : function () {
-
+    getResultsPerRequest : function () {
         let totalNumberOfResults = typeof (responseHelper.get()) !== 'undefined'?responseHelper.get().data.count:0;
+        return totalNumberOfResults;
+    },
+
+    getOffset : function () {
         let offset = typeof (responseHelper.get()) !== 'undefined'?responseHelper.get().data.offset:0;
-          if(!(totalNumberOfResults<requestParameters.LIMIT)) {
+          if(!(this.getResultsPerRequest()<requestParameters.LIMIT)) {
               return (offset + totalNumberOfResults) ;
           }
     }
+
 };
